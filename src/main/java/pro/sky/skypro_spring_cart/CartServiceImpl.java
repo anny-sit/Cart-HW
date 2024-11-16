@@ -1,10 +1,12 @@
 package pro.sky.skypro_spring_cart;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 
 @Service
+@SessionScope
 public class CartServiceImpl implements CartService {
     private Cart cart;
 
